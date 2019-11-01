@@ -25,18 +25,20 @@ def langcodes():
     )
 
 # -------- TRANSLATE ----------------------------------------------------- #
-@app.route('/translate', methods=['GET'])
+@app.route('/translate', methods=['POST'])
 def translate():
     text = request.json['text']
     src = request.json['src']
     dest = request.json['dest']
+
+    print(f'{src} -> {dest}: {text}')
 
     translation = translator.translate(text=text, src=src, dest=dest)
 
     print(translation.origin, ' -> ', translation.text)
 
     return jsonify(
-        response=translation.text,
+        text=translation.text,
     )
 
 
