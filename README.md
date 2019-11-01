@@ -1,5 +1,5 @@
 <h1 align="center">
-Flask - Google Translate Duo
+Google Translate Duo
 </h1>
 
 <img src="img/screencapture.gif" alt="Screencapture" align="center"/>
