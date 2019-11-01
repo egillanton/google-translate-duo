@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <div class="col md-3 text-center">
+        <h1>Google Translate Duo</h1>
+        </div
+    </div>
+</div>
+
+<div class="container mt-5">
+    <div class="row">
+    <div class="col align-items-start">
+        <div class="form-group">
+            <label for="exampleFormControlSelect1">From</label>
+            <select class="form-control" id="select_src">
+            </select>
+        </div>
+    </div>
+    <div class="col align-items-start">
+        <div class="form-group">
+            <label for="exampleFormControlSelect1">To</label>
+            <select class="form-control" id="select_dest">
+            </select>
+        </div>
+    </div>
+    <div class="w-100"></div>
+    <div class="col mt-3">
+        <div class="form-group">
+            <label for="textarea_1" id="textarea_label_1"></label>
+            <textarea class="form-control" id="textarea_1" rows="7"></textarea>
+        </div>
+    </div>
+    <div class="col mt-3">
+        <div class="form-group">
+            <label for="textarea_2" id="textarea_label_2"></label>
+            <textarea class="form-control" id="textarea_2" rows="7" readonly></textarea>
+        </div>
+    </div>
+    <div class="w-100"></div>
+    <div class="col mt-3">
+        <div class="form-group">
+            <label for="textarea_3" id="textarea_label_3"></label>
+            <textarea class="form-control" id="textarea_3" rows="7"></textarea>
+        </div>
+    </div>
+    <div class="col mt-3">
+        <div class="form-group">
+            <label for="textarea_4" id="textarea_label_4"></label>
+            <textarea class="form-control" id="textarea_4" rows="7" readonly></textarea>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/translate.js') }}"></script>
+{% endblock %}
