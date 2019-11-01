@@ -1,7 +1,3 @@
-<h1 align="center">
-Google Translate Duo
-</h1>
-
 <img src="img/screencapture.gif" alt="Screencapture" align="center"/>
 
 ## Table of Contents
